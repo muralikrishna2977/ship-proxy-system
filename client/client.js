@@ -111,7 +111,8 @@ function ensureReader() {
 setTimeout(ensureReader, 200);
 
 const queue = [];
-let processing = false;
+let processing = false; 
+
 
 function processQueue() {
   if (processing) return;

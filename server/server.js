@@ -12,6 +12,7 @@ const TYPE = {
   ERROR: 5
 };
 
+
 function sendFrame(socket, type, reqId, payload) {
   if (!Buffer.isBuffer(payload)) payload = Buffer.from(payload || '');
   const header = Buffer.alloc(9);
